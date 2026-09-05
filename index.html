@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Darby M. Duran — Frontend Web Developer</title>
+<meta name="description" content="Portfolio of Darby M. Duran, a junior frontend web developer building responsive, interactive websites with HTML, CSS and JavaScript.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#home" class="brand" aria-label="Darby M. Duran, home">
+      <span class="brand-mark">&lt;dmd/&gt;</span>
+    </a>
+
+    <nav class="site-nav" id="siteNav" aria-label="Primary">
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#github" class="nav-link">GitHub</a></li>
+        <li><a href="#contact" class="nav-link">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to light theme" aria-pressed="false">
+        <span class="theme-toggle-track" aria-hidden="true">
+          <span class="theme-toggle-thumb"></span>
+        </span>
+      </button>
+
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="siteNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HOME / HERO -->
+  <section id="home" class="hero">
+    <canvas id="spiralCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="hero-tag">// frontend web developer</p>
+        <h1 class="hero-name">Darby M. Duran</h1>
+        <p class="hero-role">Frontend Web Developer</p>
+        <p class="hero-desc">I build responsive, interactive, and user-friendly websites using HTML, CSS, and JavaScript.</p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-portrait">
+        <div class="portrait-frame">
+          <img id="profileImg" alt="Portrait of Darby M. Duran" width="360" height="360">
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About Me">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about reveal">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-heading">About Me</h2>
+          <p>My name is Darby M. Duran, a dedicated frontend web developer. I started learning frontend development in high school, where I began experimenting with small web projects — tinkering with layouts, breaking things, and figuring out how to fix them. That early curiosity turned into a genuine interest in building websites and interactive experiences, and it's what keeps me writing code today.</p>
+          <p>I work primarily with HTML, CSS, and JavaScript, and I'm still early in my journey as a developer. I'm upfront about that: I'm a junior frontend developer who learns by building — through personal projects, experimentation, and a fair amount of debugging. What I bring to the table is genuine enthusiasm for the craft and a growing set of real projects to show for it.</p>
+          <p>I enjoy building responsive websites, creating interactive interfaces, and finding small ways to improve how a page feels to use. Turning an idea into something that actually runs in a browser is still the part I like most, and I'm always looking for the next thing to learn.</p>
+        </div>
+
+        <div class="bring-list">
+          <h3 class="bring-heading">What I Bring</h3>
+
+          <div class="bring-card">
+            <span class="bring-icon" aria-hidden="true"><span class="icon-grid"></span></span>
+            <h4>Responsive Design</h4>
+            <p>Building websites that work across phones, tablets, laptops, and desktops.</p>
+          </div>
+
+          <div class="bring-card">
+            <span class="bring-icon" aria-hidden="true"><span class="icon-spark"></span></span>
+            <h4>Interactive Experiences</h4>
+            <p>Using JavaScript to create engaging and functional interfaces.</p>
+          </div>
+
+          <div class="bring-card">
+            <span class="bring-icon" aria-hidden="true"><span class="icon-node"></span></span>
+            <h4>Problem Solving</h4>
+            <p>Learning through experimentation, debugging, and building real projects.</p>
+          </div>
+
+          <div class="bring-card">
+            <span class="bring-icon" aria-hidden="true"><span class="icon-arrow"></span></span>
+            <h4>Continuous Learning</h4>
+            <p>Continuously improving my development skills through personal projects and hands-on practice.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="skills reveal">
+        <h3 class="skills-heading">Skills</h3>
+        <ul class="skills-grid">
+          <li class="skill-chip"><span class="skill-glyph">&lt;/&gt;</span>HTML5</li>
+          <li class="skill-chip"><span class="skill-glyph">{ }</span>CSS3</li>
+          <li class="skill-chip"><span class="skill-glyph">fn()</span>JavaScript</li>
+          <li class="skill-chip"><span class="skill-glyph">▦</span>Responsive Web Design</li>
+          <li class="skill-chip"><span class="skill-glyph">⑂</span>Git</li>
+          <li class="skill-chip"><span class="skill-glyph">◍</span>GitHub</li>
+        </ul>
+      </div>
+
+      <!-- CURRENTLY BUILDING -->
+      <div class="building-card reveal">
+        <span class="building-dot" aria-hidden="true"></span>
+        <div>
+          <h3>Currently Building</h3>
+          <p>Expanding my portfolio with more interactive frontend projects while continuing to improve my JavaScript, responsive design, and user-interface development skills.</p>
+        </div>
+      </div>
+
+      <!-- QUICK FACTS -->
+      <div class="facts-row reveal">
+        <div class="fact">
+          <span class="fact-number">3+</span>
+          <span class="fact-label">Featured Projects</span>
+        </div>
+        <div class="fact">
+          <span class="fact-number">3</span>
+          <span class="fact-label">Core Frontend Technologies</span>
+        </div>
+        <div class="fact">
+          <span class="fact-number">1</span>
+          <span class="fact-label">Developer Portfolio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects reveal">
+    <div class="section-inner">
+      <h2 class="section-heading">Projects</h2>
+      <p class="section-lead">A few real projects I've built while learning frontend development.</p>
+
+      <div class="project-list">
+
+        <article class="project-card reveal" data-repo="darbyd1127Tuna/BananaMusic">
+          <div class="project-media">
+            <img src="https://opengraph.githubassets.com/1/darbyd1127Tuna/BananaMusic" alt="Preview of the BananaMusic project" loading="lazy" onerror="this.closest('.project-media').classList.add('media-fallback')">
+          </div>
+          <div class="project-body">
+            <div class="project-heading-row">
+              <h3>BananaMusic</h3>
+              <span class="project-stats" data-stats aria-live="polite"></span>
+            </div>
+            <p>A music and social-media-inspired frontend project combining music discovery, artist profiles, albums, playlists, and social interaction into one interface.</p>
+            <ul class="tech-tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/darbyd1127Tuna/BananaMusic" target="_blank" rel="noopener" class="btn btn-primary btn-small">View Project</a>
+              <a href="https://github.com/darbyd1127Tuna/BananaMusic" target="_blank" rel="noopener" class="btn btn-ghost btn-small">GitHub Repository</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-repo="darbyd1127Tuna/PokeDexGame">
+          <div class="project-media">
+            <img src="https://opengraph.githubassets.com/1/darbyd1127Tuna/PokeDexGame" alt="Preview of the PokéDex Game project" loading="lazy" onerror="this.closest('.project-media').classList.add('media-fallback')">
+          </div>
+          <div class="project-body">
+            <div class="project-heading-row">
+              <h3>PokéDex Game</h3>
+              <span class="project-stats" data-stats aria-live="polite"></span>
+            </div>
+            <p>An interactive Pokémon-themed web project featuring JavaScript-driven gameplay, Pokémon information, and an interactive user interface.</p>
+            <ul class="tech-tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/darbyd1127Tuna/PokeDexGame" target="_blank" rel="noopener" class="btn btn-primary btn-small">View Project</a>
+              <a href="https://github.com/darbyd1127Tuna/PokeDexGame" target="_blank" rel="noopener" class="btn btn-ghost btn-small">GitHub Repository</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-repo="darbyd1127Tuna/LeyteTravelGuide">
+          <div class="project-media">
+            <img src="https://opengraph.githubassets.com/1/darbyd1127Tuna/LeyteTravelGuide" alt="Preview of the Leyte Travel Guide project" loading="lazy" onerror="this.closest('.project-media').classList.add('media-fallback')">
+          </div>
+          <div class="project-body">
+            <div class="project-heading-row">
+              <h3>Leyte Travel Guide</h3>
+              <span class="project-stats" data-stats aria-live="polite"></span>
+            </div>
+            <p>An interactive travel guide showcasing destinations around Leyte, designed to provide visitors with an engaging way to explore local attractions and places to visit.</p>
+            <ul class="tech-tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/darbyd1127Tuna/LeyteTravelGuide" target="_blank" rel="noopener" class="btn btn-primary btn-small">View Project</a>
+              <a href="https://github.com/darbyd1127Tuna/LeyteTravelGuide" target="_blank" rel="noopener" class="btn btn-ghost btn-small">GitHub Repository</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GITHUB -->
+  <section id="github" class="github reveal">
+    <div class="section-inner github-inner">
+      <h2 class="section-heading">More of My Work</h2>
+      <p class="section-lead">Explore my GitHub profile to see my projects, experiments, and ongoing development work.</p>
+      <a href="https://github.com/darbyd1127Tuna" target="_blank" rel="noopener" class="btn btn-primary">Visit My GitHub</a>
+
+      <div class="github-stats" id="githubStats" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact reveal">
+    <div class="section-inner contact-inner">
+      <div class="contact-copy">
+        <h2 class="section-heading">Let's Build Something</h2>
+        <p>I'm always interested in opportunities to build, learn, and contribute. If you're looking for a junior frontend developer or would like to discuss a web project, feel free to reach out.</p>
+        <div class="contact-actions">
+          <a href="mailto:darbyd1127@gmail.com" class="btn btn-primary">Email Me</a>
+          <a href="https://github.com/darbyd1127Tuna" target="_blank" rel="noopener" class="btn btn-secondary">GitHub Profile</a>
+        </div>
+      </div>
+      <div class="contact-terminal" aria-hidden="true">
+        <div class="terminal-bar"><span></span><span></span><span></span></div>
+        <div class="terminal-body">
+          <p><span class="terminal-prompt">$</span> contact --dev darby</p>
+          <p class="terminal-out">email: darbyd1127@gmail.com</p>
+          <p class="terminal-out">status: open to opportunities</p>
+          <p class="terminal-caret"><span class="terminal-prompt">$</span> <span class="caret"></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">&lt;dmd/&gt;</span>
+      <p>Darby M. Duran</p>
+      <p class="footer-role">Frontend Web Developer</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#github">GitHub</a>
+      <a href="#contact">Contact Me</a>
+    </nav>
+
+    <div class="footer-links">
+      <a href="https://github.com/darbyd1127Tuna" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:darbyd1127@gmail.com">darbyd1127@gmail.com</a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 Darby M. Duran. Built with HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
